@@ -1,36 +1,45 @@
 package ch.bzz.loicbookshelf.model;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-
+/**
+ * a book publisher
+ */
 public class Publisher {
     private String publisherUUID;
     private String publisher;
-    private List<Book> bookList;
 
+    /**
+     * gets publisherUUID
+     *
+     * @return value of publisherUUID
+     */
     public String getPublisherUUID() {
         return publisherUUID;
     }
 
+    /**
+     * sets publisherUUID
+     *
+     * @param publisherUUID the value to set
+     */
     public void setPublisherUUID(String publisherUUID) {
         this.publisherUUID = publisherUUID;
     }
 
+    /**
+     * gets publisher
+     *
+     * @return value of publisher
+     */
     public String getPublisher() {
         return publisher;
     }
 
+    /**
+     * sets publisher
+     *
+     * @param publisher the value to set
+     */
     public void setPublisher(String publisher) {
         this.publisher = publisher;
-    }
-
-    public List<Book> getBookList() {
-        return bookList;
-    }
-
-    public void setBookList(List<Book> bookList) {
-        this.bookList = bookList;
     }
 }
